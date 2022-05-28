@@ -13,6 +13,8 @@ Fetch random User's served by RandomUser.me API
 - **App screen**
   ![App Screenshot](https://user-images.githubusercontent.com/20166532/170832494-9a17a61c-365e-439d-a0e8-ab6794e3a391.png)
 
+  ![Mobile screen display](https://user-images.githubusercontent.com/20166532/170832625-14544d87-e7e3-48a5-a698-f41ec647bbb0.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
