@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/randomUserGen/static/css/main.50524d2b.css",
+    "main.js": "/randomUserGen/static/js/main.28845ac6.js",
+    "static/media/Along Sans Extra Bold.ttf": "/randomUserGen/static/media/Along Sans Extra Bold.8f9ed3f4e04e405980cd.ttf",
+    "index.html": "/randomUserGen/index.html",
+    "main.50524d2b.css.map": "/randomUserGen/static/css/main.50524d2b.css.map",
+    "main.28845ac6.js.map": "/randomUserGen/static/js/main.28845ac6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50524d2b.css",
+    "static/js/main.28845ac6.js"
+  ]
+}
