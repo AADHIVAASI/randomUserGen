@@ -11,7 +11,7 @@ Fetch random User's served by RandomUser.me API
 ## Screenshots
 
 - **App screen**
-  ![App Screenshot](https://user-images.githubusercontent.com/20166532/163791362-e864832f-5bb4-4828-ab1c-92c961aa15c7.png)
+  ![App Screenshot](https://user-images.githubusercontent.com/20166532/170832494-9a17a61c-365e-439d-a0e8-ab6794e3a391.png)
 
 ## Getting Started
 
@@ -31,7 +31,7 @@ If you need a reference on how to install npm, you can go to:
 
 - [How to Install Node and npm](http://treehouse.github.io/installation-guides/)
 
-- Download the project files, [here is the link if you need it](https://github.com/AADHIVAASI/gallery-app)
+- Download the project files, [here is the link if you need it](https://github.com/AADHIVAASI/randomUserGen)
 - Add .env file inside the project root folder and insert
 - Open your terminal/console and make sure to be inside the project folder.
 - Then type in your terminal/console
