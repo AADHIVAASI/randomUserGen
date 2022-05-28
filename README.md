@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Random User Generator App in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fetch random User's served by RandomUser.me API
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+- Displays Name and Email Address of random user with a display picture from RandomUser.me.
+- App is made responsive with Media Queries to support Desktops, Laptops, Tablets & Phones.
+- Link to GitHub repo linked at the end of App screen.
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **App screen**
+  ![App Screenshot](https://user-images.githubusercontent.com/20166532/163791362-e864832f-5bb4-4828-ab1c-92c961aa15c7.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+```
+npm
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A step by step series of examples that tell you how to get a development env running for this project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you need a reference on how to install npm, you can go to:
 
-### `npm run eject`
+- [How to Install Node and npm](http://treehouse.github.io/installation-guides/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Download the project files, [here is the link if you need it](https://github.com/AADHIVAASI/gallery-app)
+- Add .env file inside the project root folder and insert
+- Open your terminal/console and make sure to be inside the project folder.
+- Then type in your terminal/console
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+That will install all project's dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Start your server by typing:
 
-## Learn More
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- npm will open up a tab with the app running or simply go to your browser and type http://localhost:3000/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Built With
 
-### Code Splitting
+- [npm](https://www.npmjs.com/) - Dependency Management
+- [Git](https://git-scm.com/) - Version Control System
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [styled-components](https://www.npmjs.com/package/styled-components/v/4.1.3) - Allows CSS syntax inside React components
+- [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+- [debounce](https://www.npmjs.com/package/debounce) - Debouncing fetch functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [**Vibheesha Velayudha**](https://github.com/AADHIVAASI)
 
-### Making a Progressive Web App
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Loading Animation](https://loading.io/css/)
+- [Icons](www.flaticon.com)
