@@ -3,7 +3,6 @@ import React, { useState, useEffect, lazy, Suspense } from "react";
 import axios from "axios";
 import { Heading } from "./components/heading/Heading";
 import { Footing } from "./components/footer/Footer";
-// import { RandomUser } from "./components/User/RandomUser";
 import { FetchButton } from "./components/Button/FetchButton";
 import { Loader } from "./components/loading/Loader";
 import debounce from "debounce";
