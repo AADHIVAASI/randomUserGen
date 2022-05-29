@@ -60,6 +60,7 @@ npm start
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [styled-components](https://www.npmjs.com/package/styled-components/v/4.1.3) - Allows CSS syntax inside React components
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+- [SweetAlert2](https://sweetalert2.github.io/) - Rich, customizable and responsive Alert boxes
 - [debounce](https://www.npmjs.com/package/debounce) - Debouncing fetch functionality
 
 ### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
