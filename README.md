@@ -1,4 +1,4 @@
-# Random User Generator App in React
+![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=300&section=header&text=Random%20User%20Generator%20App%20in%20React&fontSize=40)
 
 Fetch random User's served by RandomUser.me API
 
