@@ -79,30 +79,19 @@ const Copy = styled.span`
     background-color: #ddd;
   }
 `;
-export const RandomUser = (props) => {
+const RandomUser = (props) => {
   return (
     <>
-      <div
-        style={{
-          display: props.loading ? "none" : "flex",
-        }}
-      >
+      <div>
         <a
           href={props.user.thumbnail}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Picture
-            src={props.user.thumbnail}
-            alt={props.user.fName}
-            onLoad={() => props.imageLoaded()}
-          />
+          <Picture src={props.user.thumbnail} alt={props.user.fName} />
         </a>
       </div>
-      <Info
-        className="information"
-        style={{ display: props.loading ? "none" : "flex" }}
-      >
+      <Info className="information">
         <Title>{props.user.title}</Title>
         <Name>{props.user.fName}</Name>
         <Name>{props.user.lName}</Name>
@@ -110,7 +99,7 @@ export const RandomUser = (props) => {
           <img src={copy} alt="Copy Full Name" />
         </Copy>
       </Info>
-      <Email style={{ display: props.loading ? "none" : "block" }}>
+      <Email>
         {props.user.email}{" "}
         <Copy onClick={() => props.copy("mail")}>
           <img src={copy} alt="Copy Email Address" />
@@ -119,3 +108,5 @@ export const RandomUser = (props) => {
     </>
   );
 };
+
+export default RandomUser;

@@ -20,6 +20,7 @@ export const FetchButton = (props) => {
       <div
         className="refresh"
         onClick={props.fetchUser}
+        onDoubleClick={props.preventRapidClick}
         onKeyDown={(e) => props.fetchUserEnter(e)}
         onScroll={(e) => props.fetchUserEnter(e)}
         style={{

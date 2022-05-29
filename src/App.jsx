@@ -1,12 +1,15 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import axios from "axios";
 import { Heading } from "./components/heading/Heading";
 import { Footing } from "./components/footer/Footer";
-import { RandomUser } from "./components/User/RandomUser";
+// import { RandomUser } from "./components/User/RandomUser";
 import { FetchButton } from "./components/Button/FetchButton";
 import { Loader } from "./components/loading/Loader";
 import debounce from "debounce";
+import Swal from "sweetalert2";
+
+const RandomUser = lazy(() => import("./components/User/RandomUser"));
 
 function App() {
   const [user, setUser] = useState({
@@ -16,7 +19,6 @@ function App() {
     email: "",
     thumbnail: "",
   });
-  const [loading, setLoading] = useState(true);
 
   const fetchUserEnter = (e) => {
     if (e.key === "Enter" || e.deltaY > 1) {
@@ -24,17 +26,35 @@ function App() {
     }
   };
 
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-right",
+    timer: 2000,
+    showConfirmButton: false,
+    iconColor: "white",
+    timerProgressBar: true,
+    color: "#fff",
+  });
+
   const UserFetch = () => {
-    setLoading(true);
     axios
       .get("https://randomuser.me/api")
       .then((res) => {
+        console.log(res.data.results[0]);
         setUserInfo(res.data.results[0]);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        Toast.fire({
+          icon: "error",
+          title: err.message,
+          background: "#f27474",
+        });
+        console.log(err);
+      });
   };
 
   const fetchUser = debounce(UserFetch, 700);
+
   const copy = async (selected) => {
     if (selected === "name") {
       await navigator.clipboard.writeText(
@@ -48,6 +68,14 @@ function App() {
   useEffect(() => {
     fetchUser();
   }, []);
+
+  const preventRapidClick = () => {
+    Toast.fire({
+      icon: "warning",
+      title: "Slow down Buddy!",
+      background: "#3fc3ee",
+    });
+  };
 
   useEffect(() => {
     document.addEventListener("keydown", fetchUserEnter, false);
@@ -69,23 +97,19 @@ function App() {
     });
   };
 
-  const imageLoaded = () => {
-    setLoading(false);
-  };
-
   return (
     <div className="App">
       <div className="box">
         <Heading />
         <div className="frag">
-          <Loader loading={loading} />
-          <RandomUser
-            user={user}
-            loading={loading}
-            imageLoaded={imageLoaded}
-            copy={copy}
+          <Suspense fallback={<Loader />}>
+            <RandomUser user={user} copy={copy} />
+          </Suspense>
+          <FetchButton
+            fetchUser={fetchUser}
+            fetchUserEnter={fetchUserEnter}
+            preventRapidClick={preventRapidClick}
           />
-          <FetchButton fetchUser={fetchUser} fetchUserEnter={fetchUserEnter} />
         </div>
         <Footing />
       </div>

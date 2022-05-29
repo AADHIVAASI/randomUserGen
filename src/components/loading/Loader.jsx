@@ -64,9 +64,9 @@ const Loading = styled.div`
   }
 `;
 
-export const Loader = (props) => {
+export const Loader = () => {
   return (
-    <Loading style={{ display: props.loading ? "block" : "none" }}>
+    <Loading>
       <div className="lds-ellipsis">
         <div></div>
         <div></div>
