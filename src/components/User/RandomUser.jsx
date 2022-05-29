@@ -82,25 +82,23 @@ const Copy = styled.span`
 const RandomUser = (props) => {
   return (
     <>
-      <div>
-        <a
-          href={props.user.thumbnail}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Picture src={props.user.thumbnail} alt={props.user.fName} />
-        </a>
-      </div>
+      <a
+        href={props.userInfo.thumbnail}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Picture src={props.userInfo.thumbnail} alt={props.userInfo.fName} />
+      </a>
       <Info className="information">
-        <Title>{props.user.title}</Title>
-        <Name>{props.user.fName}</Name>
-        <Name>{props.user.lName}</Name>
+        <Title>{props.userInfo.title}</Title>
+        <Name>{props.userInfo.fName}</Name>
+        <Name>{props.userInfo.lName}</Name>
         <Copy onClick={() => props.copy("name")}>
           <img src={copy} alt="Copy Full Name" />
         </Copy>
       </Info>
       <Email>
-        {props.user.email}{" "}
+        {props.userInfo.email}{" "}
         <Copy onClick={() => props.copy("mail")}>
           <img src={copy} alt="Copy Email Address" />
         </Copy>

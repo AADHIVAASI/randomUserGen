@@ -64,7 +64,7 @@ const Loading = styled.div`
   }
 `;
 
-export const Loader = () => {
+const Loader = () => {
   return (
     <Loading>
       <div className="lds-ellipsis">
@@ -76,3 +76,5 @@ export const Loader = () => {
     </Loading>
   );
 };
+
+export default Loader;

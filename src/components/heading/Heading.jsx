@@ -21,7 +21,7 @@ const H1 = styled.h1`
   }
 `;
 
-export const Heading = () => {
+const Heading = () => {
   return (
     <>
       <Header className="header">
@@ -30,3 +30,5 @@ export const Heading = () => {
     </>
   );
 };
+
+export default Heading;

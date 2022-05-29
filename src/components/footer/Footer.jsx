@@ -29,7 +29,7 @@ const IMG = styled.img`
   margin: 0 0 0 25px;
 `;
 
-export const Footing = () => {
+const Foot = () => {
   return (
     <>
       <Footer>
@@ -45,3 +45,5 @@ export const Footing = () => {
     </>
   );
 };
+
+export default Foot;
