@@ -34,7 +34,7 @@ export const Footing = () => {
     <>
       <Footer>
         <A
-          href="https://github.com/AADHIVAASI"
+          href="https://github.com/AADHIVAASI/randomUserGen"
           target="_blank"
           rel="noreferrer"
         >
